@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Glam | Belleza y Maquillaje</title>
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Glow & Glam
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" title="Cambiar Modo Oscuro/Claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio (Hero & Carrusel) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Realza tu Belleza Natural</h1>
+            <p>Descubre el arte del maquillaje profesional, productos exclusivos y técnicas que transforman miradas.</p>
+            <a href="#servicios" class="btn-primary">Explorar Servicios</a>
+        </div>
+        <!-- Carrusel de imágenes dinámico -->
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80')"></div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80')"></div>
+            <button class="carousel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="section">
+        <div class="container about-grid">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80" alt="Estudio de Maquillaje">
+            </div>
+            <div class="about-text">
+                <h2>Quiénes Somos</h2>
+                <p>En <strong>Glow & Glam</strong> creemos que el maquillaje no es una máscara, sino una herramienta de expresión artística y empoderamiento. Contamos con más de 8 años de trayectoria realzando la confianza de nuestros clientes para cada ocasión especial.</p>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Productos Cruelty-Free</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Maquilladores Certificados</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Asesoría Personalizada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Maquillaje Social & Novias</h3>
+                    <p>Luce radiante en tu boda, graduación o evento de gala con acabados de alta duración.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Clases de Automaquillaje</h3>
+                    <p>Aprende técnicas profesionales adaptadas a la forma de tu rostro y tipo de piel.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <h3>Editorial & Pasarela</h3>
+                    <p>Producciones fotográficas, fashion shows y conceptos creativos de alto impacto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="section">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Labial Matte">
+                    <div class="product-info">
+                        <h3>Labial Velvet Matte</h3>
+                        <p class="price">$24.99</p>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Paleta de Sombras">
+                    <div class="product-info">
+                        <h3>Paleta Nude Dreams</h3>
+                        <p class="price">$45.00</p>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80" alt="Base de Maquillaje">
+                    <div class="product-info">
+                        <h3>Base Glow Liquid</h3>
+                        <p class="price">$38.50</p>
+                        <button class="btn-secondary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Look 1">
+                    <div class="portfolio-overlay"><span>Glam Look</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Look 2">
+                    <div class="portfolio-overlay"><span>Bridal Makeup</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80" alt="Look 3">
+                    <div class="portfolio-overlay"><span>Editorial Style</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto & Reservas</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Hablemos de tu próximo look</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Calle Bella Vista #45, Madrid</p>
+                    <p><i class="fa-solid fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fa-solid fa-envelope"></i> contacto@glowglam.com</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre">
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="tucorreo@email.com">
+                        <small class="error-msg"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje / Cita</label>
+                        <textarea id="message" rows="4" placeholder="¿En qué servicio estás interesada?"></textarea>
+                        <small class="error-msg"></small>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    <div id="formSuccess" class="success-msg">¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Glow & Glam. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
